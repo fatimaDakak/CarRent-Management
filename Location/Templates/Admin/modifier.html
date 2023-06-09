@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modifier le manager</title>
+</head>
+<body>
+    <h1>Modifier le manager "{{ manager.username }}"</h1>
+    <form method="POST" action="{% url 'modifier-manager' manager.username %}">
+        {% csrf_token %}
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" name="username" id="username" value="{{ manager.username }}" required><br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" value="{{ manager.email }}" required><br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" id="password" value="{{ manager.password }}" required><br>
+        <input type="submit" value="Modifier">
+    </form>
+</body>
+</html>

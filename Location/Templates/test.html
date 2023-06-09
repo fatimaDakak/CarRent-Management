@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Inclure les fichiers CSS de Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Votre code HTML ici -->
+
+<!-- Inclure les fichiers JS de Bootstrap (jQuery requis) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Styles pour la section principale */
+        .main-section {
+            text-align: center;
+            padding: 100px;
+        }
+        
+        .main-section h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .main-section p {
+            font-size: 18px;
+            color: #777;
+        }
+        
+        /* Styles pour la section Services */
+        .services-section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        
+        .services-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .services-section .row {
+            margin-top: 30px;
+        }
+        
+        .services-section .col-md-4 {
+            text-align: center;
+        }
+        
+        .services-section .service-item img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        /* Styles pour la section Contact Us */
+        .contact-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .contact-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .contact-section .contact-form input,
+        .contact-section .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Styles pour la section Team */
+        .team-section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        
+        .team-section h2 {
+            font-size: 24px;
+           
+            margin-bottom: 20px;
+        }
+        
+        .team-section .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-section .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .team-section .team-member h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .team-section .team-member p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 0;
+        }
+        .custom-card {
+    border-radius: 10px;
+    height: 100%;
+}
+.navbar {
+    background-color: transparent;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-nav .nav-link {
+    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #010101;
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: rgb(248, 166, 12);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+    </style>
+</head>
+<body>
+   <!-- Section Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+  <div class="container">
+      <a class="navbar-brand" href="#">Votre Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="">Accueil</a>
+              </li>
+                  <a class="nav-link" href="{% url 'manager_login'%}">Se connecter en tant que manager</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'admin_login'%}">Se connecter en tant qu'admin</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+    <!-- Section principale -->
+    <div class="main-section">
+        <h1>Bienvenue Dans CarRent</h1>
+        <p>Cliquez sur les liens du menu pour accéder aux différentes pages.</p>
+        <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="Animation">
+    </div>
+
+ <!-- Section Services -->
+<div class="services-section">
+  <div class="container">
+    <h2 style="display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: rgb(248, 166, 12) ; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Nos services</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card custom-card animate__animated">
+                  <div class="card-body">
+                      <h3 class="card-title" style=" font-family:'Times New Roman', Times, serif; color: rgb(65, 59, 48);">Location de voitures standard</h3>
+                      <p class="card-text">Location de voitures de qualité pour tous vos besoins de déplacement.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card animate__animated">
+                  <div class="card-body">
+                      <h3 class="card-title" style=" font-family:'Times New Roman', Times, serif; color: rgb(65, 59, 48);">Location de voitures de luxe</h3>
+                      <p class="card-text">Profitez d'une expérience de conduite de luxe avec notre sélection de voitures haut de gamme.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card animate__animated">
+                  <div class="card-body">
+                      <h3 class="card-title" style=" font-family:'Times New Roman', Times, serif; color: rgb(65, 59, 48);">Location longue durée</h3>
+                      <p class="card-text">Optez pour nos offres de location à long terme et bénéficiez de tarifs avantageux.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- Section Contact Us -->
+
+      </form>
+      <div class="social-links">
+          <a href="https://www.facebook.com/votre-page-facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/votre-compte-instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Section Team -->
+    <div class="team-section">
+        <div class="container">
+          <h2 class="section-title ">Notre équipe</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/static/team/souhaila.jpeg" alt="Membre 1">
+                        <h3>SAKHRI Souhaila</h3>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/static/team/Fatima.png" alt="Membre 2">
+                        <h3>DAKAK Fatima</h3>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="/static/team/Kaoutar.png" alt="Membre 3">
+                        <h3>BELKADI Kaoutar</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+  // Attendre que la page soit complètement chargée
+  window.addEventListener('load', function() {
+      // Sélectionner les éléments avec la classe 'animate__animated'
+      var animatedElements = document.querySelectorAll('.animate__animated');
+
+      // Ajouter la classe 'animate__fadeInUp' à chaque élément pour déclencher l'animation
+      for (var i = 0; i < animatedElements.length; i++) {
+          animatedElements[i].classList.add('animate__fadeInUp');
+      }
+  });
+</script>
+
+</html>
