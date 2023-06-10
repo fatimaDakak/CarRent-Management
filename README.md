@@ -22,17 +22,6 @@ The Project is a web application that provides user management functionalities f
 - Manage managers: Administrators can perform CRUD (Create, Read, Update, Delete) operations on manager accounts. They can add new managers, view existing managers' information, update manager details, and delete manager accounts.
 - Add new administrators: Administrators have the privilege to add new administrators to the system, granting them access to the administrator functionalities.
 
-## Usage
-
-Provide instructions on how to use the application. Explain the main functionalities and how users can interact with the system. For example:
-
-1. Open the web application in your browser.
-2. Log in as a manager using your manager credentials.
-3. Access the client management section to add, remove, or update client information.
-4. Log in as an administrator using your administrator credentials.
-5. Access the manager management section to add, remove, or update manager accounts.
-6. As an administrator, you can also add new administrators to the system.
-
 
 ## Contact
 
