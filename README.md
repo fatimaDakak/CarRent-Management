@@ -36,6 +36,7 @@ Provide instructions on how to use the application. Explain the main functionali
 
 ## Contact
 
+
 Provide contact information for users to reach out with any questions or concerns. For example:
 
 For any inquiries or support, please contact us at fatima.dakak@etu.uae.ac.ma
